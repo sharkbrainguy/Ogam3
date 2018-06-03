@@ -26,7 +26,7 @@ var result = “(+ 1 2 3)”.O3Eval();
 ```
 To call C# methods from Ogam you can extend interpreter:    
 ```csharp
-"say-sello".O3Extend(new Action<string>(name => {Console.WriteLine($"Hello {name}");}));    
+"say-hello".O3Extend(new Action<string>(name => {Console.WriteLine($"Hello {name}");}));    
 ```
 After that, just call it:    
 ```csharp
